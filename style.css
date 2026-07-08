@@ -272,12 +272,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--white);
 }
 
-/* ---------------------------------- Large floating social row (hero) ---------------------------------- */
+/* ---------------------------------- Decor strip (icon row + glow, own section) ---------------------------------- */
+
+.decor-strip{
+  position: relative;
+  overflow: visible;
+  padding: 44px 0 40px;
+}
+
+.decor-strip .wrap{ position: relative; }
 
 .social-row-lg{
   display:flex;
   gap: 17px;
-  margin-top: 44px;
+  position: relative;
+  z-index: 2;
 }
 .social-row-lg a{
   width: 60px; height: 60px;
@@ -288,31 +297,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .social-row-lg a:hover{ opacity: .7; }
 .social-row-lg svg{ width: 28px; height: 28px; }
 
-/* ---------------------------------- Orbit / ring decoration ---------------------------------- */
-
-.section-pad{ position: relative; overflow: visible; }
-
 .orbit-decor{
   position:absolute;
   right: 0;
-  top: -180px;
-  width: 62%;
-  max-width: 900px;
-  min-width: 500px;
+  top: -60px;
+  width: 55%;
+  max-width: 800px;
+  min-width: 420px;
   pointer-events:none;
-  z-index: 0;
-  overflow: visible;
+  z-index: 1;
 }
 .orbit-decor img{
   width: 100%;
   height: auto;
   display: block;
 }
+
 @media (max-width: 900px){
   .orbit-decor{ display: none; }
 }
-
-.vision-values{ position:relative; z-index:1; }
 
 /* ---------------------------------- Sections ---------------------------------- */
 
