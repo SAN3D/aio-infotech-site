@@ -295,12 +295,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .orbit-decor{
   position:absolute;
   right: 0;
-  top: -190px;
+  top: 0;
   width: 62%;
   max-width: 900px;
   min-width: 500px;
   pointer-events:none;
   z-index: 0;
+  overflow: visible;
 }
 .orbit-decor img{
   width: 100%;
