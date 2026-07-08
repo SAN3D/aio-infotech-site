@@ -297,11 +297,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .orbit-decor{
   position:absolute;
-  right: -80px; top: -60px;
-  width: 560px;
-  max-width: 60vw;
+  right: 0;
+  top: -190px;
+  width: 62%;
+  max-width: 900px;
+  min-width: 500px;
   pointer-events:none;
   z-index: 0;
+}
+.orbit-decor img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 900px){
+  .orbit-decor{ display: none; }
 }
 
 .vision-values{ position:relative; z-index:1; }
