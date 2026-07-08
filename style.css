@@ -225,7 +225,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero{
   position: relative;
   padding: 90px 0 120px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-glow{
