@@ -290,12 +290,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* ---------------------------------- Orbit / ring decoration ---------------------------------- */
 
-.section-pad{ position: relative; overflow: hidden; }
+.section-pad{ position: relative; overflow: visible; }
 
 .orbit-decor{
   position:absolute;
   right: 0;
-  top: 0;
+  top: -180px;
   width: 62%;
   max-width: 900px;
   min-width: 500px;
