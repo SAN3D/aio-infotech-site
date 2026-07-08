@@ -272,25 +272,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--white);
 }
 
-/* ---------------------------------- Decor strip (icon row + glow, own section) ---------------------------------- */
+/* ---------------------------------- Hero decor (icon row + glow, aligned with CTA row) ---------------------------------- */
 
-.decor-strip{
-  position: relative;
-  overflow: visible;
-  padding: 0;
+.hero .wrap{ position: relative; }
+
+.hero-decor{
+  position: absolute;
+  right: 0;
+  top: 400px;
+  width: 48%;
+  max-width: 700px;
+  min-width: 380px;
+  pointer-events: none;
 }
 
-.decor-strip .wrap{ position: relative; }
-
-.orbit-decor{
-  position: relative;
-  width: 55%;
-  max-width: 800px;
-  min-width: 420px;
-  margin-left: auto;
-  margin-right: 0;
-  pointer-events:none;
-}
 .orbit-decor img{
   width: 100%;
   height: auto;
@@ -302,8 +297,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 17px;
   position: absolute;
   left: 0;
-  top: 42%;
+  top: 540px;
   z-index: 2;
+  pointer-events: auto;
 }
 .social-row-lg a{
   width: 60px; height: 60px;
@@ -314,9 +310,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .social-row-lg a:hover{ opacity: .7; }
 .social-row-lg svg{ width: 28px; height: 28px; }
 
-@media (max-width: 900px){
-  .orbit-decor{ display: none; }
-  .social-row-lg{ position: static; margin: 30px 0 20px; }
+@media (max-width: 1100px){
+  .hero-decor{ display: none; }
+  .social-row-lg{ position: static; margin: 30px 0 0; }
 }
 
 /* ---------------------------------- Sections ---------------------------------- */
